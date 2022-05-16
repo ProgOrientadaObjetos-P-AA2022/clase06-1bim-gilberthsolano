@@ -70,4 +70,20 @@ public class Vendedor {
     public double obtenerComisionPorAuto(){
         return comisionPorAuto;
     }
+     public String toString() {
+        String cadena = String.format("Nombres: %s\n"
+                + "Edad: %d\n"
+       
+                + "Pago mensual: %.2f\n"
+                + "Salario Minimo %.2f\n"
+                + "Numero de autos: %d\n"
+                +"Comision por auto: %.2f\n", obtenerNombres(), 
+                obtenerEdad(), 
+                obtenerPagoMensual(), 
+                obtenerSalarioMinimo(),
+                obtenerNumeroAutos(),
+                obtenerComisionPorAuto()
+                );
+        return cadena;
+    }
 }

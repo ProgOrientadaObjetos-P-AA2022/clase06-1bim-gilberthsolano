@@ -36,16 +36,18 @@ public class Ejecutor {
             // con los datos ingresados se crea el objeto de tipo Vendedor
             Vendedor v = new Vendedor(nombre, edad, sMinino, autos);
             v.calcularPagoMensual();
-            cadenaFinal = String.format("%sDatos de Vendedor\n"
-                    + "Nombre: %s\n"
-                    + "Edad: %s\n"
-                    + "Salario mínimo: %.2f\n"
-                    + "Número de autos: %d\n"
-                    + "Pago mensual: %.2f\n\n",
-                    cadenaFinal,
-                    v.obtenerNombres(), v.obtenerEdad(),
-                    v.obtenerSalarioMinimo(), v.obtenerNumeroAutos(),
-                    v.obtenerPagoMensual());
+//            cadenaFinal = String.format("%sDatos de Vendedor\n"
+//                    + "Nombre: %s\n"
+//                    + "Edad: %s\n"
+//                    + "Salario mínimo: %.2f\n"
+//                    + "Número de autos: %d\n"
+//                    + "Pago mensual: %.2f\n\n",
+//                    cadenaFinal,//para que no se pierdan los valores
+//                    v.obtenerNombres(), v.obtenerEdad(),
+//                    v.obtenerSalarioMinimo(), v.obtenerNumeroAutos(),
+//                    v.obtenerPagoMensual());
+            cadenaFinal= String.format("%s%s\n", 
+                    cadenaFinal, v);
 
             entrada.nextLine(); // limpieza del buffer
             System.out.println("Desea ingresar más vendedores. Ingrese n para"
