@@ -1,13 +1,6 @@
 Datos de Vendedor
-Nombre: Jose
-Edad: 25
-Salario mínimo: 400,00
-Número de autos: 6
-Pago mensual: 1300,00
-
-Datos de Vendedor
-Nombre: Luis
-Edad: 24
+Nombre: gilbert
+Edad: 23
 Salario mínimo: 400,00
 Número de autos: 7
 Pago mensual: 1450,00
